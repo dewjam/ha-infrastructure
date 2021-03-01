@@ -1,0 +1,15 @@
+name: 'AWS CDK Action Python'
+description: 'Deploys CDK stacks written in python'
+inputs:
+  cdk_command:
+    description: 'CDK command to execute'
+    required: true
+    default: 'diff'
+  cdk_stack:
+    description: 'CDK stack'
+    required: false
+    default: ''
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
