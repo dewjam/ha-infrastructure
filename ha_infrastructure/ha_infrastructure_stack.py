@@ -9,5 +9,6 @@ class HaInfrastructureStack(core.Stack):
 
         self.cluster = eks.Cluster(self, "ha-infra",
             version=eks.KubernetesVersion.V1_19,
-            output_config_command=True
+            output_config_command=False,
+            default_capacity=2
         )

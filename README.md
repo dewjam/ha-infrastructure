@@ -5,7 +5,7 @@ This is a CDK stack that deploys a basic EKS cluster.
 ## Deploy via Docker
 Build the docker image locally. (This image is also used for a Github Action)
 ```
-$ docker build -t aws-cdk-action/python ./.github/actions/
+$ docker build -t aws-cdk-action/python .
 ```
 
 Run the docker container to synthesize the templates
@@ -36,11 +36,11 @@ At this point you can now synthesize the CloudFormation template for this code.
 $ cdk synth
 ```
 
-Then to deploy the stack execute the following:
+Then to deploy the stack execute the following (You must supply valid AWS credentials)
 ```
-$ cdk deploy
+$ cdk deploy --all
 ```
-(You must supply valid AWS credentials)
+
 
 ## Other commands
 
