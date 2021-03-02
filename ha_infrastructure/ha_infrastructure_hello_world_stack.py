@@ -1,5 +1,3 @@
-import os
-
 from aws_cdk import core
 import aws_cdk.aws_eks as eks
 import aws_cdk.aws_ecr as ecr
