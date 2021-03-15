@@ -1,5 +1,5 @@
 
-# HA-Infrastructure Deployment instructions
+# HA-Infrastructure Deployment instructions.
 This is a CDK stack that deploys a basic EKS cluster.
 
 ## Deploy via Docker
